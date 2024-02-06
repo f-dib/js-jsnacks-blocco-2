@@ -8,12 +8,12 @@
 body {
     font-family: 'pokemon';
 
-    background-image: url('../img/pokemon-chromebook-wallpaper.jpg');
+    /* background-image: url('../img/pokemon-chromebook-wallpaper.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
-.my_height {
+/* .my_height {
     height: 300px;
 }
 
@@ -25,4 +25,27 @@ body {
 
 .my_menu {
     right: 6%;
+} */
+
+.my_position {
+    bottom: 70px;
+    left: 180px;
+}
+
+.my_border {
+    padding: 20px 100px;
+
+    color: gray;
+    box-shadow:    -5px 0 0 0 gray,
+    5px 0 0 0 gray,
+    0 -5px 0 0 gray,
+    0 5px 0 0 gray;
+}
+
+.my_border:hover {
+    color: black;
+    box-shadow:    -15px 0 0 0 black,
+    15px 0 0 0 black,
+    0 -15px 0 0 black,
+    0 15px 0 0 black;
 }

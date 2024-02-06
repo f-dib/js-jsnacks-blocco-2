@@ -1,11 +1,12 @@
 let resultElement = document.querySelector("#result");
+let titleElement = document.querySelector("#text");
 let numberElement;
 let isNumber = false;
 
 
 do {
 
-    numberElement = Number(prompt('Inserisci un numero'));
+    numberElement = Number(prompt('Stampo solo numeri pari'));
 
     if (isNaN(numberElement)) {
         alert('Il valore inserito non è un numero');
@@ -18,10 +19,12 @@ do {
 
 if (numberElement % 2 == 0){
 
-    resultElement.innerHTML = `Il numero inserito è ${numberElement}`;
+    titleElement.innerHTML = `Bravo! Il numero e' pari`;
+    resultElement.innerHTML = `${numberElement}`;
 
 } else {
 
-    resultElement.innerHTML = `Il numero inserito era dispari, ed era ${numberElement}, il primo numero disponibile pari è ${numberElement + 1}`;
+    titleElement.innerHTML = `Peccato! Il numero inserito era dispari, ed era ${numberElement}, il primo numero disponibile pari e'`;
+    resultElement.innerHTML = `${numberElement + 1}`;
 
 }
